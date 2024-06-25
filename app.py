@@ -41,5 +41,16 @@ def generate_image(prompt_text,step_count):
 
 demo=gr.Interface(fn=generate_image, inputs=["text","text"] , outputs=["image"])
 
-demo.launch(share=True)
+# Use FastAPI with Gradio
+app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello World"}
+
+@app.get("/gradio")
+def gradio_ui():
+    demo.launch(share=True, server_name="0.0.0.0", server_port=7860)
+
+if _name_ == "_main_":
+    demo.launch(share=True, server_name="0.0.0.0", server_port=7860
