@@ -40,9 +40,9 @@ demo = gr.Interface(fn=generate_image, inputs=["text", "text"], outputs=["image"
 # Use FastAPI with Gradio
 app = FastAPI()
 
-@app.get("/")
-def read_root():
-    return {"message": "Hello World"}
+# @app.get("/")
+# def read_root():
+#     return {"message": "Hello World"}
 
 @app.get("/gradio")
 def gradio_ui():
