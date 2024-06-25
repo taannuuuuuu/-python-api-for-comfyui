@@ -3,6 +3,7 @@ import gradio as gr
 import requests
 import os
 import time
+from fastapi import FastAPI
 
 URL = "http://127.0.0.1:8188/prompt"
 OUTPUT_DIR="/Users/tanuraman/ComfyUI/output"
