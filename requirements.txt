@@ -1,1 +1,6 @@
 gradio
+json
+requests
+os
+time
+pillow
