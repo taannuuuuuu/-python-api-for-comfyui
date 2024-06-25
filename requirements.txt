@@ -1,5 +1,4 @@
 gradio
 requests
-os
 time
 pillow
