@@ -53,4 +53,4 @@ def gradio_ui():
     demo.launch(share=True, server_name="0.0.0.0", server_port=7860)
 
 if _name_ == "_main_":
-    demo.launch(share=True, server_name="0.0.0.0", server_port=7860
+    demo.launch(share=True, server_name="0.0.0.0", server_port=7860)
